@@ -1,0 +1,31 @@
+[package]
+name = "codama-demo-2025-08-part-2-from-anchor-rust"
+version = "0.0.0"
+description = "A generated Rust client"
+repository = "https://github.com/lorisleiva/codama-demo-2025-08"
+edition = "2021"
+readme = "README.md"
+license = "MIT"
+
+[features]
+test-sbf = []
+serde = ["dep:serde", "dep:serde_with", "kaigan/serde"]
+
+[lints.rust.unexpected_cfgs]
+level = "warn"
+check-cfg = ['cfg(feature, values("anchor", "anchor-idl-build", "fetch"))']
+
+[dependencies]
+borsh = "0.10"
+kaigan = "0.2.6"
+num-derive = "^0.4"
+num-traits = "^0.2"
+serde = { version = "^1.0", features = ["derive"], optional = true }
+serde_with = { version = "^3.14", optional = true }
+solana-account-info = "2.2"
+solana-cpi = "2.2"
+solana-instruction = "2.3"
+solana-program-entrypoint = "2.3"
+solana-program-error = "2.2"
+solana-pubkey = { version = "2.4", features = ["borsh"] }
+thiserror = "^2.0"

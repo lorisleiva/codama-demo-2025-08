@@ -1,0 +1,21 @@
+[package]
+name = "system"
+version = "1.0.0"
+edition = "2021"
+publish = false
+
+[lib]
+crate-type = ["cdylib", "lib"]
+
+[package.metadata.solana]
+program-id = "11111111111111111111111111111111"
+
+[dependencies]
+solana-pubkey = { workspace = true }
+codama = { workspace = true }
+serde_json = { workspace = true }
+thiserror = { workspace = true }
+
+[build-dependencies]
+codama = { workspace = true }
+serde_json = { workspace = true }

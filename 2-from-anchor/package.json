@@ -1,0 +1,11 @@
+{
+  "name": "codama-demo-2025-08-part-2-from-anchor",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {},
+  "license": "MIT",
+  "packageManager": "pnpm@10.6.4"
+}
